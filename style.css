@@ -53,6 +53,11 @@ section {
     color: #fff;
 }
 
+header {
+    position: relative;
+    z-index: 999;
+}
+
 header h1 {
     position: absolute;
     left: 40px;
@@ -98,4 +103,20 @@ nav a {
 .container section:nth-child(5) {
     background-color: #e67e22;
     background-image: url('./images/bg5.jpg');
+}
+
+
+.container section {
+    /* 채도조정: 0 ~ 100 */
+    filter: grayscale(100%);
+}
+
+.container section:hover {
+    filter: grayscale(0%);
+}
+
+
+/* 메뉴 텍스트 hover 하이라이트 */
+nav a:hover {
+    color: #ddd;
 }
